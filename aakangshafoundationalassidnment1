@@ -1,0 +1,59 @@
+ <title>Simple Calculator</title>
+       <style>
+        h1
+        {
+            text-align:centre;
+            padding:23px;
+            background-color:blueviolet;
+            color:whitesmoke;
+        }
+        .use{
+            width:41px;
+            background-color:lavender;
+        }
+        .formstyle
+        {
+            width:300px;
+            height:530px;
+            margin:auto;
+            border:3px purple;
+            border radius:5px;
+            padding:20px;
+        }
+       </style>
+    </head>
+        <body>
+            <h1>calculator</h1>
+            <div class="formstyle">
+             <form name="calculator">
+                <input type="text"name="answer"id="display">
+                <br>
+                <input type="button"class="use" value="7"onclick="calculator.answer.value+='7'">
+                <input type="button"class="use" value="8"onclick="calculator.answer.value+='8'">
+                <input type="button"class="use" value="9"onclick="calculator.answer.value+='9'">
+                <input type="button"class="use" value="*"onclick="calculator.answer.value+='*'">
+                <br><br>
+                <input type="button"class="use" value="4"onclick="calculator.answer.value+='4'">
+                <input type="button"class="use" value="5"onclick="calculator.answer.value+='5'">
+                <input type="button"class="use" value="6"onclick="calculator.answer.value+='6'">
+                <input type="button"class="use" value="-"onclick="calculator.answer.value+='-'">
+                <br><br>
+                <input type="button"class="use" value="1"onclick="calculator.answer.value+='1'">
+                <input type="button"class="use" value="2"onclick="calculator.answer.value+='2'">
+                <input type="button"class="use" value="3"onclick="calculator.answer.value+='3'">
+                <input type="button"class="use" value="+"onclick="calculator.answer.value+='+'">
+                <br><br>
+                <input type="button"class="use" value="/"onclick="calculator.answer.value+='/'">
+                <input type="button"class="use" value="0"onclick="calculator.answer.value+='0'">
+                <input type="button"class="use" value="."onclick="calculator.answer.value+='.'">
+                <input type="button"class="use" value="="onclick="calculator.answer.value=eval(answer.value)"class="equal">
+                <br><br>
+                <input type="button"class="use"value="back"onclick="calculator.answer.value=answer.value.slice(0,-1)">
+               
+               <input type="button"class="use"value="clear all"onclick="calculator.answer.value=''"id="clear">
+               <br>
+             </form>
+            </div>
+        </body>
+    </html>
+</DOCTYPE>
