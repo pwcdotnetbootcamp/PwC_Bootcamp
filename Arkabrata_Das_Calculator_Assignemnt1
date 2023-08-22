@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .use{
+           width: 41px; 
+           height: 40px
+        }
+        .use1{
+            width: 86px;
+            height: 40px;
+            background-color: darkgrey;
+        }
+        #nam{
+            background-color: lightblue;
+        }
+        #whole{
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <table border="6" id="whole">
+        <tr>
+            <th colspan="4"><input style="height: 40px;" type="text" id="cal" name="answer" width></th>
+        </tr>
+        <tr>
+            <td><input type="button" class="use" value="7" onclick="answer.value+='7'"> </td>
+            <td><input type="button" class="use" value="8" onclick="answer.value+='8'"> </td>
+            <td><input type="button" class="use" value="9" onclick="answer.value+='9'"> </td>
+            <td><input type="button" class="use" value="x" onclick="answer.value+='*'"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="use" value="4" onclick="answer.value+='4'"> </td>
+            <td><input type="button" class="use" value="5" onclick="answer.value+='5'"> </td>
+            <td><input type="button" class="use" value="6" onclick="answer.value+='6'"> </td>
+            <td><input type="button" class="use" value="-" onclick="answer.value+='-'"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="use" value="1" onclick="answer.value+='1'"> </td>
+            <td><input type="button" class="use" value="2" onclick="answer.value+='2'"> </td>
+            <td><input type="button" class="use" value="3" onclick="answer.value+='3'"> </td>
+            <td><input type="button" class="use" value="+" onclick="answer.value+='+'"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="use" value="/" onclick="answer.value+='/'"> </td>
+            <td><input type="button" class="use" value="0" onclick="answer.value+='0'"> </td>
+            <td><input type="button" class="use" value="." onclick="answer.value+='.'"> </td>
+            <td><input type="button" id="nam" class="use" value="=" onclick="answer.value=eval(answer.value)"> </td>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="button" class="use1" value="CE" onclick="answer.value=''"></th>
+            <th colspan="2"><input type="button" class="use1" value="C" onclick="answer.value=answer.value.slice(0,-1)"></th>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
