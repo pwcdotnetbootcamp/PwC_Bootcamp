@@ -1,0 +1,80 @@
+package pkg1;
+
+import java.util.Scanner;
+
+public class Contributor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		{
+		        Scanner scanner = new Scanner(System.in);
+		        int choice;
+		        int id; 
+		        String name, email, pwd;
+		        
+		        // display menu and get user's choice
+		        do {
+		            System.out.println("Menu:");
+		            System.out.println("1. ID");
+		            System.out.println("2. Email Id");
+		            System.out.println("3. Name");
+		            System.out.println("4. Password");
+		            System.out.println("5. Exit");
+		            System.out.print("Enter your choice: ");
+		            
+		            choice = scanner.nextInt();
+		            
+		            //Execute the selected operation
+		            switch (choice) {
+		                case 1:
+		                    // for id
+		                    System.out.print("Enter your ID: ");
+		                    id = scanner.nextInt();
+		        			scanner.nextLine();
+
+		                    System.out.println("ID: " + id );
+		                    break;
+		                case 2:
+		                	 // for email id
+		                    System.out.print("Enter your email ID: ");
+		                    email = scanner.nextLine();
+		                    scanner.nextLine();
+		                    System.out.println("Email ID " + email );
+		                    break;
+		                    
+		                case 3:
+		                	 // for name
+		                    System.out.print("Enter your name: ");
+		                    name = scanner.nextLine();
+		                    scanner.nextLine();
+		                    System.out.println("Name " + name );
+		                    break;
+		                case 4:
+		                	 // for password
+		                    System.out.print("Enter your password: ");
+		                    pwd = scanner.nextLine();
+		                    scanner.nextLine();
+		                    System.out.println("Password " + pwd );
+		                    break;
+		                
+		                case 5:
+		                    //Exit the program
+		                	System.out.println("Thank You & Hope to see you again!");
+		                    System.out.println("Exiting program...");
+		                    break;
+		                default:
+		                    // invalid choice
+		                    System.out.println("Invalid choice, please try again.");
+		                    break;
+		            }
+		            
+		        } while (choice != 5); // repeat until the user chooses to exit
+		        
+		        scanner.close(); // close the scanner
+		    }
+		}
+		
+}
+
+
