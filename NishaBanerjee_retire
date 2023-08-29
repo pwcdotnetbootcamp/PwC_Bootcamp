@@ -1,0 +1,24 @@
+namespace Prj1Day1Con
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Enter your name:");
+            string name = Console.ReadLine();
+            Console.WriteLine("Entered name: " + name);
+            Console.WriteLine("Enter your age:");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Entered age: " + age);
+
+           // int retire = (65 - age);
+           // Console.WriteLine("welcome {0} you have {1} years left for retirement",name,retire);
+
+            int retirement=(age<=65)?(65-age):65;
+            if(retirement>=65)
+            Console.WriteLine("you have already retired");
+            else
+            Console.WriteLine("welcome {0} you have {1} years left for retirement",name,retirement);
+        }
+    }
+}
