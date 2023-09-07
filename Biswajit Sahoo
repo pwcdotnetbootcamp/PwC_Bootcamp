@@ -202,5 +202,107 @@ interface Imyiterator
         }
     }
 
+using System;
+using System.Net;
+
+namespace Prj1Day1Con
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int c = 1;
+            foreach (string i in args)
+            {
+                Console.WriteLine("Arg at #{0} : {1}", (c++), i);
+
+            }
+            if (c == 7)
+            {
+                Console.WriteLine("OK");
+            }
+            else { Console.WriteLine("error"); }
+
+             int l = 1;
+             foreach (string i in args)
+            {  
+            if (l % 2 == 0 )
+                 {
+
+                    int b;
+                    bool y = int.TryParse(i, out b);
+                    if (y == true)
+                    {
+                        Console.WriteLine("ok");
+                    }
+                    else
+                    {
+                        Console.WriteLine("error");
+                    }
+
+                }
+                l++;
+                
+
+             }
+
+
+            int d = 1;
+            foreach (string i in args)
+            {
+               
+                if (d == 2)
+                {
+                    int y = Convert.ToInt32(i);
+                    if (y % 8 == 0)
+                    {
+                        Console.WriteLine("java  " + y / 8);
+                    }
+                    else { Console.WriteLine("java  " + (y / 8 + 1)); }
+                }
+                if (d == 4)
+                {
+                    int y = Convert.ToInt32(i);
+                    if (y % 8 == 0)
+                    {
+                        Console.WriteLine("jee  " + y / 8);
+                    }
+                    else { Console.WriteLine("jee  " + (y / 8 + 1)); }
+                }
+                if (d == 6)
+                {
+                    int y = Convert.ToInt32(i);
+                    if (y % 8 == 0)
+                    {
+                        Console.WriteLine("jaa  " + y / 8);
+                    }
+                    else { Console.WriteLine("jaa  " + (y / 8 + 1)); }
+                }
+                d++;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
